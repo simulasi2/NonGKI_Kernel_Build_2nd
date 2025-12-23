@@ -1,4 +1,4 @@
-name: Build Xiaomi Mix2s (Evolution X 10 A15)
+name: Build Xiaomi Mia1 (Evolution X 9 A14)
 
 on:
   workflow_call:
@@ -83,7 +83,7 @@ env:
   BUILD_DEBUGGER: "false" # Output build errors.
   SKIP_PATCH: "false" # Ignore errors found in Patch Debugger.
 
-  BUILD_OTHER_CONFIG: "true" # Merge config files.
+  BUILD_OTHER_CONFIG: "false" # Merge config files.
   MERGE_CONFIG_FILES: "vendor/xiaomi/polaris.config,vendor/debugfs.config"
 
   FREE_MORE_SPACE: "false" # if u want get more space, enabled it.
