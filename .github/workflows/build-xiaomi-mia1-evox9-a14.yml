@@ -42,7 +42,7 @@ env:
   AK3_SOURCE : "https://github.com/osm0sis/AnyKernel3.git"
   AK3_BRANCH : "master"
 
-  BOOT_SOURCE : "https://www.dropbox.com/scl/fi/kx6t0u2ih5fn3vhaqr1ck/boot.emmc.win?rlkey=6tjeecd4w7qmci87li6o8i4fo&st=68q1t7dp&dl=1"
+  BOOT_SOURCE : "https://files.catbox.moe/wnp61m.win"
 
   NEED_DTBO : false
   NEED_SAFE_DTBO : false
