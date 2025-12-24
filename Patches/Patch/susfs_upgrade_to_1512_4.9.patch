@@ -240,9 +240,9 @@ index aabf061..4217dfd 100644
 --- a/fs/proc/task_mmu.c
 +++ b/fs/proc/task_mmu.c
 @@ -17,7 +17,7 @@
+ #include <linux/page_idle.h>
  #include <linux/shmem_fs.h>
  #include <linux/mm_inline.h>
- #include <linux/ctype.h>
 -#ifdef CONFIG_KSU_SUSFS_SUS_KSTAT
 +#if defined(CONFIG_KSU_SUSFS_SUS_KSTAT) || defined(CONFIG_KSU_SUSFS_SUS_MAP)
  #include <linux/susfs_def.h>

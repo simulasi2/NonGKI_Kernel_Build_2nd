@@ -42,7 +42,7 @@ env:
   AK3_SOURCE : "https://github.com/osm0sis/AnyKernel3.git"
   AK3_BRANCH : "master"
 
-  BOOT_SOURCE : ""
+  BOOT_SOURCE : "https://www.dropbox.com/scl/fi/kx6t0u2ih5fn3vhaqr1ck/boot.emmc.win?rlkey=6tjeecd4w7qmci87li6o8i4fo&st=68q1t7dp&dl=1"
 
   NEED_DTBO : false
   NEED_SAFE_DTBO : false
@@ -52,15 +52,15 @@ env:
   # Other env
   PYTHON_VERSION: "3" # Only 2(Ubuntu 22.04 and Ubuntu 20.04) or 3(Any OS Versions).
 
-  PACK_METHOD: "Anykernel3" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
+  PACK_METHOD: "MKBOOTIMG" # Anykernel3 need SOURCE and BRANCH, MKBOOTIMG needn't it.
 
   KERNELSU_METHOD: "shell" # shell, manual and only.
   KERNELSU_SUS_PATCH: "false" # if u need manual susfs patch to kernelsu.
 
-  PATCHES_SOURCE: "JackA1ltman/NonGKI_Kernel_Patches" # [your_name]/[your_patch] -> gooder123/NonGKI_Patcher
-  PATCHES_BRANCH: "mi_kernel" # [your_branch] -> main
+  PATCHES_SOURCE: "simulasi2/NonGKI_Kernel_Build_2nd" # [your_name]/[your_patch] -> gooder123/NonGKI_Patcher
+  PATCHES_BRANCH: "mainline" # [your_branch] -> main
 
-  SUSFS_FOLDER_FIXED: "mix2s_evox_a15" # Fill in your patch prefix directory here. Leave it blank if there isn't one. -> your_folder
+  SUSFS_FOLDER_FIXED: "Patches" # Fill in your patch prefix directory here. Leave it blank if there isn't one. -> your_folder
   SUSFS_155_FIXED: "susfs_155_fixed" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2 (Only v1.5.5 SuSFS)
   SUSFS_LATEST_FIXED: "" # Fill in your patches here. If there are multiple patches, please separate them with a comma. Leave it blank if there isn't one. -> patch1,patch2
 
