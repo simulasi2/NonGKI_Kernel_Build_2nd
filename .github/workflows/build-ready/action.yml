@@ -42,7 +42,7 @@ runs:
           elif [[ "${{ env.PACK_METHOD }}" == "MKBOOTIMG" ]] || [ "${{ env.DEFCONFIG_FROM_BOOT }}" == "true" ]; then
             cd $GITHUB_WORKSPACE
             git clone https://android.googlesource.com/platform/system/tools/mkbootimg $GITHUB_WORKSPACE/mkboottools -b main-kernel-build-2024 --depth=1
-            ${{ env.CURLX }} ${{ env.BOOT_SOURCE }} $GITHUB_WORKSPACE/boot_source_${{ env.DEVICE_NAME }}.img
+            curl -L ${{ env.BOOT_SOURCE }} -o $GITHUB_WORKSPACE/boot_source_${{ env.DEVICE_NAME }}.img
             cd device_kernel
           else
             echo "Need packing method! "
